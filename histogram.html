@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./histogram.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    <main class="content-container">
+        <h1>Histogram Generator</h1>
+        <form action="" method="post" >
+            <input type="file" id="data-input">
+        </form>
+            <div class="flex-container">
+            <section id="lower-bounds">
+                <h2>Lower bounds</h2>
+                <table>
+                    <tr>
+                        <td>Max</td>
+                        <td contenteditable="true" class="bound-input" id="maxpercent">100.00</td>
+                    </tr>
+                    <tr>
+                        <td>A+</td>
+                        <td contenteditable="true" class="bound-input" id="A+percent">95.00</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td contenteditable="true" class="bound-input" id="Apercent">90.00</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td contenteditable="true" class="bound-input" id="A-percent">85.00</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td contenteditable="true" class="bound-input" id="B+percent">80.00</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td contenteditable="true" class="bound-input" id="Bpercent">75.00</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td contenteditable="true" class="bound-input" id="B-percent">70.00</td>
+                    </tr>
+                    <tr>
+                        <td>C+</td>
+                        <td contenteditable="true" class="bound-input" id="C+percent">65.00</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td contenteditable="true" class="bound-input" id="Cpercent">60.00</td>
+                    </tr>
+                    <tr>
+                        <td>C-</td>
+                        <td contenteditable="true" class="bound-input" id="C-percent">55.00</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td contenteditable="true" class="bound-input" id="Dpercent">50.00</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td contenteditable="true" class="bound-input" id="Fpercent">00.00</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="histogram">
+                <h2>Histogram</h2>
+                <div id="histogram-plot">
+                    <div id="y-axis">
+                        <div class="y-label">3</div>
+                        <div class="y-label">2</div>
+                        <div class="y-label">1</div>
+                        <div class="y-label">0</div>
+                    </div>
+                    <!-- Bars will be added here -->
+                </div>
+                <div id="x-axis">
+                    <div class="spacing-label"></div>
+                    <div class="grade-labels">A+</div>
+                    <div class="grade-labels">A</div>
+                    <div class="grade-labels">A-</div>
+                    <div class="grade-labels">B+</div>
+                    <div class="grade-labels">B</div>
+                    <div class="grade-labels">B-</div>
+                    <div class="grade-labels">C+</div>
+                    <div class="grade-labels">C</div>
+                    <div class="grade-labels">C-</div>
+                    <div class="grade-labels">D</div>
+                    <div class="grade-labels">F</div>
+                </div>
+            </section>
+            <section id="stats">
+                <h2>Stats</h2>
+                <table>
+                    <tr>
+                        <td>Highest</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Lowest</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mean</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Median</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
